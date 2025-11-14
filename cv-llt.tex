@@ -6,7 +6,7 @@
 % LianTze Lim (liantze@gmail.com)
 % 23 Oct, 2022
 % 24 Aug, 2024 -- Updated X (Twitter) icon
-\documentclass[a4paper,skipsamekey,11pt,english]{curve}
+\documentclass[a4paper,skipsamekey,11pt,lithuanian]{curve}
 
 % Uncomment to enable Chinese; needs XeLaTeX
 % \usepackage{ctex}
@@ -25,7 +25,7 @@
 \usepackage{courier}
 
 % If you need to further customise your biblatex setup e.g. with \DeclareFieldFormat etc please add them here AFTER loading settings.sty. For example, to remove the default "[Online] Available:" prefix before URLs when using the IEEE style:
-\DefineBibliographyStrings{english}{url={\textsc{url}}}
+\DefineBibliographyStrings{lithuanian}{url={\textsc{url}}}
 
 %% Bibliography setup removed as not needed for this CV
 
@@ -34,9 +34,9 @@
 % Change the page margins if you want
 % \geometry{left=1cm,right=1cm,top=1.5cm,bottom=1.5cm}
 
-% Change the colours if you want
-% \definecolor{SwishLineColour}{HTML}{00FFFF}
-% \definecolor{MarkerColour}{HTML}{0000CC}
+% Change the colours if you want - Making everything black
+\definecolor{SwishLineColour}{HTML}{000000}
+\definecolor{MarkerColour}{HTML}{000000}
 
 % Change the item prefix marker if you want
 % \prefixmarker{$\diamond$}
@@ -54,27 +54,28 @@
 
   \makefield{\faEnvelope[regular]}{\href{mailto:laurynas.jasiukenas@gmail.com}{\texttt{laurynas.jasiukenas@gmail.com}}}
   \makefield{\faLinkedin}
-  {\href{https://www.linkedin.com/in/laurynasjasiukėnas-30529795}{\texttt{laurynasjasiukėnas}}}
+  {\href{https://www.linkedin.com/in/laurynas-jasiukėnas-30529795}{\texttt{laurynasjasiukenas}}}
 
   %% Professional tagline
   \vspace{0.5em}
-  {\large\textit{Data Science | ML \& AI | Recommender Systems | Search Relevance}}
+  {\large\textit{ML ir DI Inžinerija | Duomenų Mokslas | Rekomendacinės ir Paieškos Sistemos  \\
+  Verslo Analitika | Eksperimentavimas}}
 }
 
 \rightheader{~}
 \begin{fullonly}
 \photo[r]{photo}
-\photoscale{0.13}
+\photoscale{0.10}
 \end{fullonly}
 
-\title{Curriculum Vitae}
+\title{Gyvenimo Aprašymas}
 
 \begin{document}
 \makeheaders[c]
 
 \makerubric{employment}
 \makerubric{education}
-\makerubric{skills}
 \makerubric{misc}
+\makerubric{skills}
 
 \end{document}

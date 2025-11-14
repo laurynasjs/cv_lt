@@ -40,8 +40,8 @@
 \usetikzlibrary{shapes,shadows}
 
 \RequirePackage{comment}
-\definecolor{SwishLineColour}{HTML}{88AC0B}
-\definecolor{MarkerColour}{HTML}{B6073F}
+\definecolor{SwishLineColour}{HTML}{000000}
+\definecolor{MarkerColour}{HTML}{000000}
 
 % If you're not a researcher nor an academic, you probably don't need biblatex; delete this line.
 \RequirePackage{biblatex}
@@ -85,7 +85,7 @@
 \setlength{\subrubricbeforespace}{4pt}
 \def\@@rubrichead#1{%
   \begin{tikzpicture}[baseline]%\
-  \shade[left color=SwishLineColour!60!white, right color=white] rectangle (\@almosttextwidth,2.5pt);
+  \fill[black] rectangle (\@almosttextwidth,2.5pt);
   \node[font={\@rubricfont},inner sep=0pt,text ragged,anchor=south west,text depth=.5ex,text height=1.5ex] at (1pt,2pt) {#1};
   \end{tikzpicture}%
   \vspace\rubricspace%
@@ -102,13 +102,9 @@
 \urlstyle{tt}
 
 \newcommand{\prefixmarker}[1]{\def\@prefixmarker{#1}}
-\def\@prefixmarker{\relscale{.9}\faBookmark}
+\def\@prefixmarker{}
 
-\prefix{%
-  \hspace*{-1ex}
-  \color{MarkerColour!80!black}\@prefixmarker%
-  \hspace*{1ex}%
-}
+\prefix{}
 
 \newcommand{\makerubrichead}[1]{\vskip\baselineskip\@@rubrichead{#1}}
 
@@ -144,7 +140,7 @@
 }
 
 
-\RequirePackage[colorlinks=true,allcolors=black,breaklinks=true]{hyperref}
+\RequirePackage[hidelinks,breaklinks=true]{hyperref}
 
 % Reduce spacing in itemize environments
 \let\olditemize\itemize
